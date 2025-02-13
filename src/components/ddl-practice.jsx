@@ -10,8 +10,7 @@ import { createOpenAI } from "@ai-sdk/openai";
 
 export default function DDLPractice() {
   const openai = createOpenAI({
-    apiKey:
-      "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",
+    apiKey: process.env.OPENAI_API_KEY,
   });
 
   const [selectedRDBMS, setSelectedRDBMS] = useState("postgresql");
